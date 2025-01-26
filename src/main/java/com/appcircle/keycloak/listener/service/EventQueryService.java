@@ -2,7 +2,7 @@ package com.appcircle.keycloak.listener.service;
 
 import com.appcircle.keycloak.listener.model.EventQuery;
 import com.appcircle.keycloak.listener.model.KeyCloakEventEntity;
-import com.appcircle.keycloak.listener.repository.EventEntityRepository;
+import com.appcircle.keycloak.listener.repository.EventsRepository;
 import com.appcircle.keycloak.listener.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -21,7 +21,7 @@ public class EventQueryService {
     private EventRepository eventRepository;
 
     @Autowired
-    private EventEntityRepository eventEntityRepository;
+    private EventsRepository eventsRepository;
 
     public Optional<EventQuery> queryLatestEvent() {
         return eventRepository.findAll(
@@ -34,9 +34,9 @@ public class EventQueryService {
 
         if(eventQuery.isPresent()) {
             return eventQuery.map(EventQuery::getLatestQueryEventTimestamp)
-                    .map(eventTime -> eventEntityRepository.queryEventEntityByEventTime(Optional.ofNullable(eventTime))).get();
+                    .map(eventTime -> eventsRepository.queryEventEntityByEventTime(Optional.ofNullable(eventTime))).get();
         } else {
-            return eventEntityRepository.queryEventEntityByEventTime(Optional.empty());
+            return eventsRepository.queryEventEntityByEventTime(Optional.empty());
         }
     }
 
