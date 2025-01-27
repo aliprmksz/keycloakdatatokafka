@@ -1,5 +1,6 @@
 package com.appcircle.keycloak.listener.service;
 
+import com.appcircle.keycloak.listener.dto.KeyCloakEventDTO;
 import com.appcircle.keycloak.listener.model.AdminEventQuery;
 import com.appcircle.keycloak.listener.model.EventOutbox;
 import com.appcircle.keycloak.listener.model.EventQuery;
@@ -76,7 +77,7 @@ public class EventOutboxService {
     }
 
     public Optional<EventQuery> saveEventOutboxWithEventQuery(KeyCloakEventDTO keyCloakEventDTO,
-                                Optional<EventQuery> eventQuery, Optional<Long> processedLatestEvent) {
+                                                              Optional<EventQuery> eventQuery, Optional<Long> processedLatestEvent) {
         EventOutbox eventOutbox = new EventOutbox();
         eventOutbox.setEventTime(keyCloakEventDTO.getEvent_time());
         eventOutbox.setEventType(keyCloakEventDTO.getEventType());

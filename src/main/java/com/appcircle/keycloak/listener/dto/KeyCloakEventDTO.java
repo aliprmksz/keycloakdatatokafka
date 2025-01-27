@@ -1,4 +1,4 @@
-package com.appcircle.keycloak.listener.service;
+package com.appcircle.keycloak.listener.dto;
 
 public class KeyCloakEventDTO {
     private Long id;

@@ -1,4 +1,4 @@
-package com.appcircle.keycloak.listener.kafka;
+package com.appcircle.keycloak.listener.configuration;
 
 
 import org.apache.kafka.clients.producer.ProducerConfig;

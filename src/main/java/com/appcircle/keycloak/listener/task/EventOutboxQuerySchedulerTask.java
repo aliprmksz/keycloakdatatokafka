@@ -2,11 +2,8 @@ package com.appcircle.keycloak.listener.task;
 
 import com.appcircle.keycloak.listener.kafka.KafkaPublisher;
 import com.appcircle.keycloak.listener.model.EventOutbox;
-import com.appcircle.keycloak.listener.model.EventQuery;
-import com.appcircle.keycloak.listener.model.KeyCloakEventEntity;
 import com.appcircle.keycloak.listener.service.EventOutboxService;
-import com.appcircle.keycloak.listener.service.EventQueryService;
-import com.appcircle.keycloak.listener.service.KeyCloakEventDTO;
+import com.appcircle.keycloak.listener.dto.KeyCloakEventDTO;
 import lombok.extern.slf4j.Slf4j;
 import net.javacrumbs.shedlock.spring.annotation.SchedulerLock;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +11,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 @Component
 @Slf4j

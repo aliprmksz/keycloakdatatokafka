@@ -1,7 +1,6 @@
 package com.appcircle.keycloak.listener.kafka;
 
-import com.appcircle.keycloak.listener.model.KeyCloakEventEntity;
-import com.appcircle.keycloak.listener.service.KeyCloakEventDTO;
+import com.appcircle.keycloak.listener.dto.KeyCloakEventDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
