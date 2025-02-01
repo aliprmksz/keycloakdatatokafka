@@ -39,7 +39,7 @@ services:
       - keycloak_network
 
   keycloak:
-    image: quay.io/keycloak/keycloak:23.0.6
+    image: quay.io/keycloak/keycloak:26.0.0
     command: start-dev
     environment:
       KC_HOSTNAME_STRICT_BACKCHANNEL: false
@@ -48,11 +48,15 @@ services:
       KC_HEALTH_ENABLED: true
       KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN}
       KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
+      KC_SPI_EVENT_STORE_PROVIDER: custom-jpa-event-store
+      KC_SPI_EVENT_STORE_CUSTOM-JPA-EVENT-STORE_ENABLED: true
       KC_DB: postgres
       KC_DB_URL: jdbc:postgresql://postgres/${POSTGRES_DB}
       KC_DB_USERNAME: ${POSTGRES_USER}
       KC_DB_PASSWORD: ${POSTGRES_PASSWORD}
 
+    volumes:
+      - ./providers:/opt/keycloak/providers
     ports:
       - 8081:8080
     restart: always

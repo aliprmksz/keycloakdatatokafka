@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+//will be removed
 @Entity
 @Table(name = "event_query")
 public class EventQuery {
