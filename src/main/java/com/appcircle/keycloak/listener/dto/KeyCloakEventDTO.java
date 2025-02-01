@@ -1,5 +1,7 @@
 package com.appcircle.keycloak.listener.dto;
 
+import java.util.UUID;
+
 public class KeyCloakEventDTO {
     private Long id;
     private Long event_time;

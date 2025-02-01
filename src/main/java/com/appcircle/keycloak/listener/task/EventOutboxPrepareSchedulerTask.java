@@ -24,8 +24,8 @@ public class EventOutboxPrepareSchedulerTask {
     @Autowired
     private EventOutboxService eventOutboxService;
 
-    @Scheduled(cron = "*/7 * * * * *")
-    @SchedulerLock(name = "EventOutboxPrepareSchedulerTask.scheduledTask", lockAtLeastFor = "PT5S", lockAtMostFor = "PT7S")
+    //@Scheduled(cron = "*/7 * * * * *")
+    //@SchedulerLock(name = "EventOutboxPrepareSchedulerTask.scheduledTask", lockAtLeastFor = "PT5S", lockAtMostFor = "PT7S")
     public void scheduledTask() {
         Optional<EventQuery> latestEventQuery = eventOutboxService.queryLatestEvent();
         Optional<AdminEventQuery> latestAdminEventQuery = eventOutboxService.queryLatestAdminEvent();

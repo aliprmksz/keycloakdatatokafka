@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+
 @Entity
 @Table(name = "event_outbox")
 public class EventOutbox {
@@ -16,8 +17,11 @@ public class EventOutbox {
     private Long eventTime;
     private String eventType;
 
+    private String eventId;
+
     public EventOutbox() {
     }
+
 
     public Long getId() {
         return id;
@@ -25,6 +29,15 @@ public class EventOutbox {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+
+    public String getEventId() {
+        return eventId;
+    }
+
+    public void setEventId(String eventId) {
+        this.eventId = eventId;
     }
 
     public Long getEventTime() {
