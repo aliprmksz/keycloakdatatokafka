@@ -1,0 +1,1009 @@
+2025-02-01 15:01:40,516 INFO o.s.b.StartupInfoLogger [main] Starting ListenerApplication using Java 21.0.5 with PID 85100 (/Users/aparmaksiz/Downloads/listener/target/classes started by aparmaksiz in /Users/aparmaksiz/Downloads/listener)
+2025-02-01 15:01:40,518 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-01 15:01:40,518 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-01 15:01:40,886 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 15:01:40,887 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-02-01 15:01:40,901 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.AdminEventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 15:01:40,901 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventOutboxRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 15:01:40,902 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 15:01:40,902 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2025-02-01 15:01:40,906 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 15:01:40,907 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-01 15:01:40,918 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2025-02-01 15:01:41,250 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-02-01 15:01:41,257 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-01 15:01:41,257 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-01 15:01:41,257 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-01 15:01:41,280 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-01 15:01:41,281 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 749 ms
+2025-02-01 15:01:41,409 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-01 15:01:41,493 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@399f5daf
+2025-02-01 15:01:41,494 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-01 15:01:41,541 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-01 15:01:41,570 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-01 15:01:41,585 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-01 15:01:41,700 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-01 15:01:41,732 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-01 15:01:41,738 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-01 15:01:42,068 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-01 15:01:42,129 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 15:01:42,309 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-01 15:01:42,690 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoints beneath base path '/actuator'
+2025-02-01 15:01:42,724 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-01 15:01:42,729 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-02-01 15:01:42,738 INFO o.s.b.StartupInfoLogger [main] Started ListenerApplication in 2.42 seconds (process running for 2.674)
+2025-02-01 15:01:42,927 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-01 15:01:42,927 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-02-01 15:01:42,928 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 1 ms
+2025-02-01 15:09:21,935 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m40s312ms).
+2025-02-01 15:11:02,331 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01 15:11:03,349 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-02-01 15:11:03,355 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 15:11:03,357 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-01 15:11:03,358 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-02-01 16:32:43,489 INFO o.s.b.StartupInfoLogger [main] Starting ListenerApplication using Java 21.0.5 with PID 89472 (/Users/aparmaksiz/Downloads/listener/target/classes started by aparmaksiz in /Users/aparmaksiz/Downloads/listener)
+2025-02-01 16:32:43,490 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-01 16:32:43,491 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-01 16:32:43,878 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 16:32:43,879 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-02-01 16:32:43,892 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.AdminEventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:32:43,893 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventOutboxRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:32:43,893 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:32:43,894 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2025-02-01 16:32:43,898 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 16:32:43,898 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-01 16:32:43,910 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2025-02-01 16:32:44,242 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-02-01 16:32:44,253 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-01 16:32:44,253 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-01 16:32:44,253 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-01 16:32:44,276 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-01 16:32:44,276 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 770 ms
+2025-02-01 16:32:44,387 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-01 16:32:44,474 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28fa541
+2025-02-01 16:32:44,474 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-01 16:32:44,518 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-01 16:32:44,545 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-01 16:32:44,560 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-01 16:32:44,668 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-01 16:32:44,698 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-01 16:32:44,705 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-01 16:32:45,024 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-01 16:32:45,082 WARN o.h.t.s.i.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists event_outbox alter column id set data type uuid" via JDBC [ERROR: identity column type must be smallint, integer, or bigint]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists event_outbox alter column id set data type uuid" via JDBC [ERROR: identity column type must be smallint, integer, or bigint]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:334)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.appcircle.keycloak.listener.ListenerApplication.main(ListenerApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: ERROR: identity column type must be smallint, integer, or bigint
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 37 common frames omitted
+2025-02-01 16:32:45,090 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 16:32:45,277 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-01 16:32:45,706 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoints beneath base path '/actuator'
+2025-02-01 16:32:45,744 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-01 16:32:45,750 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-02-01 16:32:45,760 INFO o.s.b.StartupInfoLogger [main] Started ListenerApplication in 2.477 seconds (process running for 2.916)
+2025-02-01 16:32:46,027 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(2)-192.168.1.108] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-01 16:32:46,027 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-192.168.1.108] Initializing Servlet 'dispatcherServlet'
+2025-02-01 16:32:46,028 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-192.168.1.108] Completed initialization in 1 ms
+2025-02-01 16:33:42,618 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01 16:33:43,628 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-02-01 16:33:43,642 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 16:33:43,648 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-01 16:33:43,651 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-02-01 16:34:58,564 INFO o.s.b.StartupInfoLogger [main] Starting ListenerApplication using Java 21.0.5 with PID 89567 (/Users/aparmaksiz/Downloads/listener/target/classes started by aparmaksiz in /Users/aparmaksiz/Downloads/listener)
+2025-02-01 16:34:58,565 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-01 16:34:58,566 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-01 16:34:58,956 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 16:34:58,956 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-02-01 16:34:58,969 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.AdminEventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:34:58,970 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventOutboxRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:34:58,970 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:34:58,971 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2025-02-01 16:34:58,974 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 16:34:58,975 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-01 16:34:58,987 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2025-02-01 16:34:59,317 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-02-01 16:34:59,323 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-01 16:34:59,324 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-01 16:34:59,324 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-01 16:34:59,349 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-01 16:34:59,349 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 768 ms
+2025-02-01 16:34:59,462 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-01 16:34:59,551 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4aab7195
+2025-02-01 16:34:59,552 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-01 16:34:59,598 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-01 16:34:59,629 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-01 16:34:59,644 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-01 16:34:59,765 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-01 16:34:59,796 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-01 16:34:59,803 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-01 16:35:00,152 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-01 16:35:00,197 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 16:35:00,396 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-01 16:35:00,840 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoints beneath base path '/actuator'
+2025-02-01 16:35:00,878 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-01 16:35:00,884 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-02-01 16:35:00,894 INFO o.s.b.StartupInfoLogger [main] Started ListenerApplication in 2.527 seconds (process running for 2.904)
+2025-02-01 16:35:01,497 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(2)-192.168.1.108] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-01 16:35:01,497 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-192.168.1.108] Initializing Servlet 'dispatcherServlet'
+2025-02-01 16:35:01,498 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-192.168.1.108] Completed initialization in 0 ms
+2025-02-01 16:39:00,019 WARN c.z.h.p.PoolBase [scheduling-1] HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4aab7195 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-02-01 16:39:00,022 WARN c.z.h.p.PoolBase [scheduling-1] HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7b6cf642 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-02-01 16:39:00,023 WARN c.z.h.p.PoolBase [scheduling-1] HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@482a37a8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-02-01 16:39:00,023 WARN c.z.h.p.PoolBase [scheduling-1] HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2ace3aa8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-02-01 16:39:00,024 WARN c.z.h.p.PoolBase [scheduling-1] HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1efaa32 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2025-02-01 16:39:20,015 WARN o.h.e.j.s.SqlExceptionHelper [scheduling-1] SQL Error: 0, SQLState: 08001
+2025-02-01 16:39:20,016 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] HikariPool-1 - Connection is not available, request timed out after 20003ms (total=0, active=0, idle=0, waiting=0)
+2025-02-01 16:39:20,017 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2025-02-01 16:39:20,019 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:466)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:639)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:374)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.appcircle.keycloak.listener.service.EventOutboxService$$SpringCGLIB$$0.findAllEventOutbox(<generated>)
+	at com.appcircle.keycloak.listener.task.EventOutboxQuerySchedulerTask.scheduledTask(EventOutboxQuerySchedulerTask.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 20003ms (total=0, active=0, idle=0, waiting=0)] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:129)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:156)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:286)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:294)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:232)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:176)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420)
+	... 24 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 20003ms (total=0, active=0, idle=0, waiting=0)
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:686)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:144)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:46)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:126)
+	... 31 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 14 common frames omitted
+2025-02-01 16:39:50,008 WARN o.h.e.j.s.SqlExceptionHelper [scheduling-1] SQL Error: 0, SQLState: 08001
+2025-02-01 16:39:50,009 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] HikariPool-1 - Connection is not available, request timed out after 20004ms (total=0, active=0, idle=0, waiting=0)
+2025-02-01 16:39:50,009 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2025-02-01 16:39:50,010 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:466)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:639)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:374)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.appcircle.keycloak.listener.service.EventOutboxService$$SpringCGLIB$$0.findAllEventOutbox(<generated>)
+	at com.appcircle.keycloak.listener.task.EventOutboxQuerySchedulerTask.scheduledTask(EventOutboxQuerySchedulerTask.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 20004ms (total=0, active=0, idle=0, waiting=0)] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:129)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:156)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:286)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:294)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:232)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:176)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420)
+	... 24 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 20004ms (total=0, active=0, idle=0, waiting=0)
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:686)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:144)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:46)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:126)
+	... 31 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 14 common frames omitted
+2025-02-01 16:40:20,008 WARN o.h.e.j.s.SqlExceptionHelper [scheduling-1] SQL Error: 0, SQLState: 08001
+2025-02-01 16:40:20,009 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] HikariPool-1 - Connection is not available, request timed out after 20003ms (total=0, active=0, idle=0, waiting=0)
+2025-02-01 16:40:20,009 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2025-02-01 16:40:20,010 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:466)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:639)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:374)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.appcircle.keycloak.listener.service.EventOutboxService$$SpringCGLIB$$0.findAllEventOutbox(<generated>)
+	at com.appcircle.keycloak.listener.task.EventOutboxQuerySchedulerTask.scheduledTask(EventOutboxQuerySchedulerTask.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 20003ms (total=0, active=0, idle=0, waiting=0)] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:129)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:156)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:286)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:294)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:232)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:176)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420)
+	... 24 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 20003ms (total=0, active=0, idle=0, waiting=0)
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:686)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:144)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:46)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:126)
+	... 31 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 14 common frames omitted
+2025-02-01 16:40:50,002 WARN o.h.e.j.s.SqlExceptionHelper [scheduling-1] SQL Error: 0, SQLState: 08001
+2025-02-01 16:40:50,004 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] HikariPool-1 - Connection is not available, request timed out after 20000ms (total=0, active=0, idle=0, waiting=0)
+2025-02-01 16:40:50,004 ERROR o.h.e.j.s.SqlExceptionHelper [scheduling-1] Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2025-02-01 16:40:50,005 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [scheduling-1] Unexpected error occurred in scheduled task
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:466)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:532)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:405)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:639)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:374)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.appcircle.keycloak.listener.service.EventOutboxService$$SpringCGLIB$$0.findAllEventOutbox(<generated>)
+	at com.appcircle.keycloak.listener.task.EventOutboxQuerySchedulerTask.scheduledTask(EventOutboxQuerySchedulerTask.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection [HikariPool-1 - Connection is not available, request timed out after 20000ms (total=0, active=0, idle=0, waiting=0)] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:129)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:156)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:286)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:294)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:232)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:176)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420)
+	... 24 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 20000ms (total=0, active=0, idle=0, waiting=0)
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:686)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:179)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:144)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:46)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:126)
+	... 31 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 14 common frames omitted
+2025-02-01 16:41:15,067 INFO o.a.k.c.c.AbstractConfig [scheduling-1] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = listener-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 1000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-02-01 16:41:15,094 INFO o.a.k.c.t.i.KafkaMetricsCollector$StateLedger [scheduling-1] initializing Kafka metrics collector
+2025-02-01 16:41:15,103 INFO o.a.k.c.p.KafkaProducer [scheduling-1] [Producer clientId=listener-producer-1] Instantiated an idempotent producer.
+2025-02-01 16:41:15,132 INFO o.a.k.c.u.AppInfoParser$AppInfo [scheduling-1] Kafka version: 3.8.1
+2025-02-01 16:41:15,133 INFO o.a.k.c.u.AppInfoParser$AppInfo [scheduling-1] Kafka commitId: 70d6ff42debf7e17
+2025-02-01 16:41:15,133 INFO o.a.k.c.u.AppInfoParser$AppInfo [scheduling-1] Kafka startTimeMs: 1738417275131
+2025-02-01 16:41:15,259 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:15,260 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:15,260 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:16,268 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:16,269 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:16,269 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:17,275 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:17,275 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:17,275 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:18,281 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:18,281 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:18,281 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:19,288 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:19,289 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:19,289 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:20,295 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:20,296 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:20,296 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:21,301 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:21,302 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:21,302 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:22,308 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:22,309 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:22,310 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:23,316 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:23,317 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:23,317 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:24,324 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:24,325 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:24,325 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:25,332 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:25,333 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:25,333 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:26,336 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:26,337 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:26,337 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:27,342 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:27,343 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:27,343 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:28,350 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:28,351 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:28,351 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:29,352 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:29,353 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:29,353 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:30,358 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:30,359 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:30,359 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:31,366 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:31,367 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:31,367 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:32,371 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:32,372 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:32,373 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:33,379 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:33,380 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:33,380 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:34,387 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:34,388 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:34,388 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:35,395 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:35,396 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:35,397 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:36,402 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:36,403 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:36,403 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:37,410 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:37,410 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:37,411 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:37,949 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01 16:41:38,415 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:38,416 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:38,416 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:38,958 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-02-01 16:41:39,420 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:39,420 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:39,421 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:40,428 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:40,430 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:40,430 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:41,434 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:41,434 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:41,435 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:42,441 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:42,442 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:42,443 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:43,446 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:43,447 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:43,447 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:44,453 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:44,454 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:44,454 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:45,458 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:45,459 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:45,460 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:46,467 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:46,468 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:46,468 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:47,476 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:47,477 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:47,477 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:48,480 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:48,480 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:48,480 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:49,486 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:49,486 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:49,486 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:50,493 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:50,494 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:50,494 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:51,498 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:51,499 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:51,499 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:52,506 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:52,507 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:52,507 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:53,513 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:53,513 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:53,514 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:54,515 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:54,515 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:54,515 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:55,522 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:55,523 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:55,523 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:56,530 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:56,530 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:56,530 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:57,538 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:57,539 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:57,539 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:58,546 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:58,547 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:58,547 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:41:59,555 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:41:59,556 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:41:59,556 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:00,562 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:00,562 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:00,563 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:01,566 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:01,567 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:01,567 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:02,574 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:02,576 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:02,576 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:03,584 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:03,584 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:03,584 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:04,592 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:04,593 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:04,593 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:05,600 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:05,600 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:05,601 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:06,607 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:06,607 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:06,607 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:07,613 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:07,613 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:07,613 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:08,615 INFO o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Node -1 disconnected.
+2025-02-01 16:42:08,615 WARN o.a.k.c.NetworkClient [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-02-01 16:42:08,615 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2025-02-01 16:42:08,975 INFO o.s.c.s.DefaultLifecycleProcessor$LifecycleGroup [SpringApplicationShutdownHook] Shutdown phase 1073741823 ends with 1 bean still running after timeout of 30000ms: [taskScheduler]
+2025-02-01 16:42:08,976 INFO o.a.k.c.p.KafkaProducer [SpringApplicationShutdownHook] [Producer clientId=listener-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-02-01 16:42:09,621 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Metrics scheduler closed
+2025-02-01 16:42:09,622 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-02-01 16:42:09,622 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-02-01 16:42:09,622 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Metrics reporters closed
+2025-02-01 16:42:09,622 ERROR c.a.k.l.t.EventOutboxQuerySchedulerTask [scheduling-1] Error during publish kafka event com.appcircle.keycloak.listener.model.EventOutbox@7295e7f8, {}
+org.apache.kafka.common.KafkaException: Requested metadata update after close
+	at org.apache.kafka.clients.producer.internals.ProducerMetadata.awaitUpdate(ProducerMetadata.java:127)
+	at org.apache.kafka.clients.producer.KafkaProducer.waitOnMetadata(KafkaProducer.java:1176)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:1025)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:991)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:1103)
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:837)
+	at org.springframework.kafka.core.KafkaTemplate.observeSend(KafkaTemplate.java:805)
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:588)
+	at com.appcircle.keycloak.listener.kafka.KafkaPublisher.publishEvent(KafkaPublisher.java:18)
+	at com.appcircle.keycloak.listener.task.EventOutboxQuerySchedulerTask.scheduledTask(EventOutboxQuerySchedulerTask.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-01 16:42:09,622 WARN c.a.k.l.t.EventOutboxQuerySchedulerTask [scheduling-1] Kafka event publish is stopped because of exception
+org.apache.kafka.common.KafkaException: Producer closed while send in progress
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:1028)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:991)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:1103)
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:837)
+	at org.springframework.kafka.core.KafkaTemplate.observeSend(KafkaTemplate.java:805)
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:588)
+	at com.appcircle.keycloak.listener.kafka.KafkaPublisher.publishEvent(KafkaPublisher.java:18)
+	at com.appcircle.keycloak.listener.task.EventOutboxQuerySchedulerTask.scheduledTask(EventOutboxQuerySchedulerTask.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.kafka.common.KafkaException: Requested metadata update after close
+	at org.apache.kafka.clients.producer.internals.ProducerMetadata.awaitUpdate(ProducerMetadata.java:127)
+	at org.apache.kafka.clients.producer.KafkaProducer.waitOnMetadata(KafkaProducer.java:1176)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:1025)
+	... 22 common frames omitted
+2025-02-01 16:42:09,622 INFO o.a.k.c.u.AppInfoParser [SpringApplicationShutdownHook] App info kafka.producer for listener-producer-1 unregistered
+2025-02-01 16:42:09,631 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 16:42:09,660 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-01 16:42:09,670 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-02-01 16:50:53,643 INFO o.s.b.StartupInfoLogger [main] Starting ListenerApplication using Java 21.0.5 with PID 91512 (/Users/aparmaksiz/Downloads/listener/target/classes started by aparmaksiz in /Users/aparmaksiz/Downloads/listener)
+2025-02-01 16:50:53,644 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-01 16:50:53,644 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-01 16:50:53,985 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 16:50:53,985 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-02-01 16:50:53,998 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.AdminEventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:50:53,998 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventOutboxRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:50:53,998 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.appcircle.keycloak.listener.repository.EventRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-02-01 16:50:53,999 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2025-02-01 16:50:54,003 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-01 16:50:54,003 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-01 16:50:54,013 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2025-02-01 16:50:54,306 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-02-01 16:50:54,311 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-01 16:50:54,312 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-01 16:50:54,312 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-01 16:50:54,333 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-01 16:50:54,333 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 674 ms
+2025-02-01 16:50:54,436 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-01 16:50:54,534 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cb4c4cc
+2025-02-01 16:50:54,534 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-01 16:50:54,575 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-01 16:50:54,596 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-01 16:50:54,607 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-01 16:50:54,706 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-01 16:50:54,732 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-01 16:50:54,737 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-01 16:50:55,038 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-01 16:50:55,095 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 16:50:55,269 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-01 16:50:55,636 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoints beneath base path '/actuator'
+2025-02-01 16:50:55,669 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-01 16:50:55,674 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2025-02-01 16:50:55,683 INFO o.s.b.StartupInfoLogger [main] Started ListenerApplication in 2.229 seconds (process running for 2.73)
+2025-02-01 16:50:56,011 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(2)-192.168.1.108] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-01 16:50:56,011 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-192.168.1.108] Initializing Servlet 'dispatcherServlet'
+2025-02-01 16:50:56,012 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(2)-192.168.1.108] Completed initialization in 1 ms
+2025-02-01 16:51:00,123 INFO o.a.k.c.c.AbstractConfig [scheduling-1] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = listener-producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 10
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 1000
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-02-01 16:51:00,139 INFO o.a.k.c.t.i.KafkaMetricsCollector$StateLedger [scheduling-1] initializing Kafka metrics collector
+2025-02-01 16:51:00,146 INFO o.a.k.c.p.KafkaProducer [scheduling-1] [Producer clientId=listener-producer-1] Instantiated an idempotent producer.
+2025-02-01 16:51:00,162 INFO o.a.k.c.u.AppInfoParser$AppInfo [scheduling-1] Kafka version: 3.8.1
+2025-02-01 16:51:00,162 INFO o.a.k.c.u.AppInfoParser$AppInfo [scheduling-1] Kafka commitId: 70d6ff42debf7e17
+2025-02-01 16:51:00,162 INFO o.a.k.c.u.AppInfoParser$AppInfo [scheduling-1] Kafka startTimeMs: 1738417860161
+2025-02-01 16:51:00,377 WARN o.a.k.c.NetworkClient$DefaultMetadataUpdater [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Error while fetching metadata with correlation id 1 : {keycloak-events=LEADER_NOT_AVAILABLE}
+2025-02-01 16:51:00,378 INFO o.a.k.c.Metadata [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] Cluster ID: O2edblY8SR-TQyM4x60fEA
+2025-02-01 16:51:00,419 INFO o.a.k.c.p.i.TransactionManager [kafka-producer-network-thread | listener-producer-1] [Producer clientId=listener-producer-1] ProducerId set to 0 with epoch 0
+2025-02-01 16:55:27,638 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-01 16:55:28,644 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-02-01 16:55:28,646 INFO o.a.k.c.p.KafkaProducer [SpringApplicationShutdownHook] [Producer clientId=listener-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-02-01 16:55:28,652 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Metrics scheduler closed
+2025-02-01 16:55:28,652 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-02-01 16:55:28,652 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-02-01 16:55:28,652 INFO o.a.k.c.m.Metrics [SpringApplicationShutdownHook] Metrics reporters closed
+2025-02-01 16:55:28,652 INFO o.a.k.c.u.AppInfoParser [SpringApplicationShutdownHook] App info kafka.producer for listener-producer-1 unregistered
+2025-02-01 16:55:28,674 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-01 16:55:28,678 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-01 16:55:28,679 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

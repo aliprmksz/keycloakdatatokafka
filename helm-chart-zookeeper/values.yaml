@@ -1,0 +1,7 @@
+zookeeper:
+  image: confluentinc/cp-zookeeper:7.4.0
+  replicas: 1
+  service:
+    name: zookeeper
+    port: 2181
+

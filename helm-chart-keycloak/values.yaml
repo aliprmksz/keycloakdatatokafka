@@ -1,0 +1,15 @@
+keycloak:
+  image: quay.io/keycloak/keycloak:26.0.0
+  adminUser: "admin"
+  adminPassword: "admin"
+  persistence:
+    enabled: true
+    storageClass: ""
+    accessMode: ReadWriteOnce
+    size: 500Mi
+
+postgresql:
+  database: "keycloak-database"
+  user: "keycloak-user"
+  password: "keycloak-password"
+  host: "test-postgres-postgresql"

@@ -1,0 +1,14 @@
+zookeeper:
+  image: confluentinc/cp-zookeeper:7.4.0
+  replicas: 1
+  service:
+    name: test-zookeeper-zookeeper
+    port: 2181
+kafka:
+  image: confluentinc/cp-kafka:7.4.0
+  replicas: 1
+  service:
+    name: kafka
+    port: 9092
+  brokerId: 1
+  replicationFactor: 1
