@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 public class ShedLockConfiguration {
     @Bean
     public LockProvider lockProvider(DataSource dataSource) {
-        JdbcTemplateLockProvider.Configuration.builder()
+        return JdbcTemplateLockProvider.Configuration.builder()
                 .withJdbcTemplate(new JdbcTemplate(dataSource))
                 .usingDbTime()
                 .build();
